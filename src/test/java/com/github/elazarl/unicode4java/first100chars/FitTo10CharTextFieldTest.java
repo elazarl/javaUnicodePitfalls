@@ -41,7 +41,7 @@ public abstract class FitTo10CharTextFieldTest {
 
     private void testStrings(String... inputs) {
         for (String input : inputs) {
-            final String trimmed = getImpl().fitTo10Char(input);
+            final String trimmed = getImpl().invoke(input);
             assertThat("String: '"+trimmed+"' not within 20% of 10ems",
                     stringWidthInPixels(trimmed),
                     closeTo(em10, em10 * .1d));

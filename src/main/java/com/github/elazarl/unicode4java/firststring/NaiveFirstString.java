@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class NaiveFirstString implements FirstString {
-    public String firstString(List<String> list) {
+    public String invoke(List<String> list) {
         List<String> copy = new ArrayList<String>();
         copy.addAll(list);
         Collections.sort(copy);

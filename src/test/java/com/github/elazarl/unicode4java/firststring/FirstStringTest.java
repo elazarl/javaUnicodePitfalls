@@ -15,11 +15,11 @@ public abstract class FirstStringTest {
     @Test
     public void testFirstString() throws Exception {
         assertThat(
-                getImpl().firstString(Arrays.asList("a","b")),
+                getImpl().invoke(Arrays.asList("a", "b")),
                 equalTo("a")
         );
         assertThat(
-                getImpl().firstString(Arrays.asList("é","f","z")),
+                getImpl().invoke(Arrays.asList("é", "f", "z")),
                 equalTo("é")
         );
     }

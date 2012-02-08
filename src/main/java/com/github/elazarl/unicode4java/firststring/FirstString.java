@@ -7,5 +7,5 @@ import java.util.List;
  * the first string
  */
 public interface FirstString {
-    String firstString(List<String> list);
+    String invoke(List<String> list);
 }

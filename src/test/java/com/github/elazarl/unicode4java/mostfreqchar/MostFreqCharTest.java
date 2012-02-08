@@ -12,13 +12,13 @@ public abstract class MostFreqCharTest {
     abstract MostFreqChar getImpl();
     @Test
     public void testRegularString() {
-        assertThat(getImpl().mostFreqChar("aaaaaa bc"),equalTo("a"));
+        assertThat(getImpl().invoke("aaaaaa bc"),equalTo("a"));
     }
 
     @Test
     public void testSurrogateString() {
-        assertThat(getImpl().mostFreqChar("𝌈"),equalTo("𝌈"));
-        assertThat(getImpl().mostFreqChar("🂱🂱🁒🁒🁒🂫🂱🂱🂱🂱" ),
+        assertThat(getImpl().invoke("𝌈"),equalTo("𝌈"));
+        assertThat(getImpl().invoke("🂱🂱🁒🁒🁒🂫🂱🂱🂱🂱"),
                 equalTo("🂱"));
     }
 }

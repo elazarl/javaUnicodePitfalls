@@ -11,7 +11,7 @@ import java.util.List;
  * world, and one should think about the locale before sorting text..
  */
 public class LocaleAwareFirstString implements FirstString {
-    public String firstString(List<String> list) {
+    public String invoke(List<String> list) {
         List<String> copy = new ArrayList<String>();
         copy.addAll(list);
         Collator collator = Collator.getInstance();

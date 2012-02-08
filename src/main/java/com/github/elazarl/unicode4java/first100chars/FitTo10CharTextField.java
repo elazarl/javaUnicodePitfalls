@@ -5,5 +5,5 @@ package com.github.elazarl.unicode4java.first100chars;
  * capable of containing 10 characters.
  */
 public interface FitTo10CharTextField {
-    String fitTo10Char(String text);
+    String invoke(String text);
 }

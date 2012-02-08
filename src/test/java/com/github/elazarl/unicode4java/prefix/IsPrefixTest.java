@@ -27,7 +27,7 @@ public abstract class IsPrefixTest {
         };
         for (String[] test : tests) {
             assertTrue(test[0]+" should be prefix of "+test[1],
-                    getImpl().isPrefix(test[0],test[1]));
+                    getImpl().invoke(test[0], test[1]));
         }
     }
 }
