@@ -1,4 +1,4 @@
-package com.github.elazarl.unicode4java;
+package com.github.elazarl.unicode4java.utils;
 
 import java.util.Iterator;
 

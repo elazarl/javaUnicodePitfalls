@@ -2,8 +2,7 @@ package com.github.elazarl.unicode4java.first100chars;
 
 import java.text.BreakIterator;
 
-public class CorrectFitTo10CharTextField extends FitTo10CharTextField {
-    @Override
+public class CorrectFitTo10CharTextField implements FitTo10CharTextField {
     public String fitTo10Char(String text) {
         int graphemeCount = 0;
         BreakIterator it = BreakIterator.getCharacterInstance();

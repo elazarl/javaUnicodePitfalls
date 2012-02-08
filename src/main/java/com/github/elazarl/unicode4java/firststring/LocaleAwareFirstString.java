@@ -10,8 +10,7 @@ import java.util.List;
  * its purpose to let programmer know that there's more than English in this
  * world, and one should think about the locale before sorting text..
  */
-public class LocaleAwareFirstString extends FirstString {
-    @Override
+public class LocaleAwareFirstString implements FirstString {
     public String firstString(List<String> list) {
         List<String> copy = new ArrayList<String>();
         copy.addAll(list);

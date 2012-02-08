@@ -1,5 +1,6 @@
 package com.github.elazarl.unicode4java;
 
+import com.github.elazarl.unicode4java.utils.CodePointIterable;
 import org.junit.Test;
 
 import java.util.ArrayList;

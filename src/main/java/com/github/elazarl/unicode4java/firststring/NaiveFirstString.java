@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class NaiveFirstString extends FirstString {
-    @Override
+public class NaiveFirstString implements FirstString {
     public String firstString(List<String> list) {
         List<String> copy = new ArrayList<String>();
         copy.addAll(list);

@@ -22,4 +22,6 @@ UTF-8 characters in string literals.
 * Grapheme/character boundaries, a unicode character is not always what
   visible or stand alone.
 
+TODO: case folding and case mapping examples
+
 Bidi is also an important issue, but it is not presented here.

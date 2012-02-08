@@ -1,17 +1,15 @@
 package com.github.elazarl.unicode4java.mostfreqchar;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.github.elazarl.unicode4java.utils.Histogram;
 
-public class NaiveMostFreqChar extends MostFreqChar {
-    @Override
+public class NaiveMostFreqChar implements MostFreqChar {
     public String mostFreqChar(String str) {
-        Map<Character,Integer> histo = new HashMap<Character, Integer>();
+        Histogram<Character> histo = Histogram.build();
         for (int i=0;i<str.length();i++) {
-            inc(histo, str.charAt(i));
+            histo.add(str.charAt(i));
         }
 
-        return Character.toString(highestValueEntry(histo).getKey());
+        return Character.toString(histo.mostFreqItem());
     }
 
 }
